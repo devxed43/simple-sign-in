@@ -1,3 +1,6 @@
+const usernamePrompt = prompt("enter username");
+const passwordPrompt = prompt("enter password");
+
 const database = [
   {
     username: "user1",
@@ -35,8 +38,8 @@ function signIn(username, password) {
       username === database[0].username &&
       password === database[0].password
     ) {
-      return newsfeed;
-     
+      alert('success signing in');
+      return;
     } else {
       alert("error signing in");
       return;
@@ -44,4 +47,4 @@ function signIn(username, password) {
   }
 }
 
-signIn();
+signIn(usernamePrompt, passwordPrompt);
