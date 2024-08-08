@@ -35,8 +35,8 @@ const newsfeed = [
 function signIn(username, password) {
   for (let i = 0; i < database.length; i++) {
     if (
-      username === database[0].username &&
-      password === database[0].password
+      username === database[i].username &&
+      password === database[i].password
     ) {
       alert('success signing in');
       return;
